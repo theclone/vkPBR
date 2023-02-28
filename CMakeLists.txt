@@ -10,7 +10,7 @@ find_package(glm REQUIRED)
 find_package(Vulkan REQUIRED)
 
 # Add source to this project's executable.
-add_executable (vkPBR "vkPBR.cpp" "vkPBR.h")
+add_executable (vkPBR "vkPBR.cpp" "vkPBR.h" "WindowManager.cpp" "WindowManager.h")
 
 include_directories(vkPBR ${SDL_INCLUDE_DIRS})
 include_directories(vkPBR ${GLM_INCLUDE_DIRS})
